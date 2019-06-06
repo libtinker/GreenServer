@@ -19,6 +19,8 @@ public class ServerTool {
 		String apiName = (String) requestParm.get("apiName");
 		if (apiName.equals("login")) {//登录
 			rusultMap = User.login(requestParm);
+		}else if (apiName.equals("recommend")) {
+			rusultMap = HomeServer.recommend(requestParm);
 		}
 		return rusultMap;
 	}
