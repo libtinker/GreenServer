@@ -21,6 +21,4 @@ public class HomeServer {
 			 }
 		return rusultMap;
 	}
-	
-	
 }

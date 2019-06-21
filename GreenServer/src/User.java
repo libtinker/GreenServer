@@ -22,7 +22,7 @@ public class User {
 			 ArrayList<Map<String, Object>> result = DBTool.mysqli_select("test", sql);
 			 Map<String, Object> userMap = result.get(0);
 			 String password = (String) userMap.get("password");			 
-		if (password.equals(requestParm.get("passwold"))) {
+		if (password.equals(requestParm.get("password"))) {
 			 rusultMap.put("code", "200");
 			 rusultMap.put("msg", "登录成功");
 			 rusultMap.put("data", userMap);
