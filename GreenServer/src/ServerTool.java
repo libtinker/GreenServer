@@ -5,6 +5,7 @@ import java.util.Map;
 public class ServerTool {
 
 	public static Map<String, Object> getMapWithUrlParm(String urlParm) {	//解析客户端传来的数据
+		System.out.println(urlParm);
 		Map<String, Object> map =  new HashMap<>();
 		String [] stringArr= urlParm.split("&");
 		for(int i=0;i<stringArr.length;i++) {
